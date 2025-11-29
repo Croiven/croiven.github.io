@@ -20,12 +20,12 @@ export interface WorkExperience {
   id: string;
   company: string;
   position: string;
-  location?: string;
+  location?: string | null;
   startDate: string;
-  endDate?: string; // If undefined, it's current position
+  endDate?: string | null; // If undefined or null, it's current position
   description: string;
-  achievements?: string[];
-  technologies?: string[];
+  achievements?: string[] | null;
+  technologies?: string[] | null;
 }
 
 // Education
@@ -33,13 +33,13 @@ export interface Education {
   id: string;
   institution: string;
   degree: string;
-  field?: string;
-  location?: string;
+  field?: string | null;
+  location?: string | null;
   startDate: string;
-  endDate?: string;
-  description?: string;
-  gpa?: string;
-  honors?: string[];
+  endDate?: string | null;
+  description?: string | null;
+  gpa?: string | null;
+  honors?: string[] | null;
 }
 
 // Volunteering
@@ -47,11 +47,11 @@ export interface Volunteering {
   id: string;
   organization: string;
   role: string;
-  location?: string;
+  location?: string | null;
   startDate: string;
-  endDate?: string;
+  endDate?: string | null;
   description: string;
-  achievements?: string[];
+  achievements?: string[] | null;
 }
 
 // Skills
