@@ -1,0 +1,6 @@
+/* App-specific styles - theme colors handled by Material-UI */
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

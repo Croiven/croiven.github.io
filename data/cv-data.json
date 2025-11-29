@@ -1,0 +1,166 @@
+{
+  "coreDetails": {
+    "name": "Joonas Rautiainen",
+    "title": "Software Developer",
+    "image": "/profile_picture.jpg",
+    "email": "joonas.rautiainen98@gmail.com",
+    "location": "Tampere, Finland",
+    "socialMedia": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/joonas-rautiainen/"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/croiven"
+      }
+    ],
+    "bio": "Motivated software developer with a strong passion for continuous learning and professional growth. I am always ready to take on new challenges that provide opportunities for development and skill enhancement."
+  },
+  "workExperience": [
+    {
+      "id": "1",
+      "company": "Woolman Oy",
+      "position": "Software Developer",
+      "location": "Finland",
+      "startDate": "5/2021",
+      "endDate": null,
+      "description": "I work as a full-stack developer, and my main responsibility is UI and backend development in in-house project. I have earlier worked in customer projects where we created and customized Shopify stores including theme and integration development.",
+      "achievements": [
+        "Full-stack development with focus on UI and backend",
+        "Created and customized Shopify stores for customers",
+        "Developed Shopify themes and integrations"
+      ],
+      "technologies": ["JavaScript", "TypeScript", "React", "Angular", "Python", "Ruby", "HTML", "CSS", "Shopify", "Liquid"]
+    },
+    {
+      "id": "2",
+      "company": "Jyväskylä University",
+      "position": "Assistant Teacher",
+      "location": "Jyväskylä, Finland",
+      "startDate": "1/2021",
+      "endDate": "5/2021",
+      "description": "I worked as an assistant teacher in a programming 1 course.",
+      "achievements": [
+        "Assisted students in programming fundamentals",
+        "Supported course delivery and student learning"
+      ],
+      "technologies": ["C#"]
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "institution": "Tampere University",
+      "degree": "Master of Technology",
+      "field": "Computer Science",
+      "location": "Tampere, Finland",
+      "startDate": "7/2023",
+      "endDate": null,
+      "description": "Master's degree in Computer Science.",
+      "gpa": null,
+      "honors": []
+    },
+    {
+      "id": "2",
+      "institution": "Jyväskylä University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "location": "Jyväskylä, Finland",
+      "startDate": "8/2017",
+      "endDate": "12/2021",
+      "description": "I have completed my Bachelor of Science majoring in computer science.",
+      "gpa": null,
+      "honors": []
+    }
+  ],
+  "volunteering": [
+    {
+      "id": "1",
+      "organization": "Koodaamo",
+      "role": "Instructor",
+      "location": "Jyväskylä, Finland",
+      "startDate": "1/2020",
+      "endDate": "5/2021",
+      "description": "I was an instructor at Koodaamo, where senior students assist other students with programming courses.",
+      "achievements": [
+        "Assisted students with programming courses",
+        "Supported peer learning and knowledge sharing"
+      ]
+    },
+    {
+      "id": "2",
+      "organization": "Linkki Jyväskylä ry",
+      "role": "Treasurer",
+      "location": "Jyväskylä, Finland",
+      "startDate": "7/2020",
+      "endDate": "12/2021",
+      "description": "Served as treasurer in various organizations.",
+      "achievements": [
+        "Managed financial responsibilities",
+        "Maintained financial records and reporting"
+      ]
+    },
+    {
+      "id": "3",
+      "organization": "Linkki Jyväskylä ry",
+      "role": "Event Coordinator",
+      "location": "Jyväskylä, Finland",
+      "startDate": "1/2019",
+      "endDate": "12/2019",
+      "description": "Coordinated events and activities.",
+      "achievements": [
+        "Organized and managed events",
+        "Coordinated logistics and planning"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Software Development",
+      "skills": ["JavaScript", "TypeScript", "React", "Angular", "Python", "Node.js", "Ruby", "HTML", "CSS", "Shopify", "Liquid"]
+    },
+    {
+      "category": "Other Strengths",
+      "skills": ["Mathematical and logical thinking", "Problem solving", "Fast learning"]
+    },
+    {
+      "category": "Languages",
+      "skills": ["Finnish - Native", "English - good"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Discord Bots",
+      "description": "Created different kinds of Discord bots to help gaming communities with various functionalities and automation.",
+      "technologies": ["JavaScript", "Node.js", "Discord.js"],
+      "startDate": null,
+      "endDate": null,
+      "url": null,
+      "githubUrl": null,
+      "image": null,
+      "highlights": [
+        "Developed bots for gaming communities",
+        "Automated community management tasks",
+        "Enhanced user experience in Discord servers"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Small Coding Projects",
+      "description": "Various small coding projects created for fun and learning purposes during free time.",
+      "technologies": [],
+      "startDate": null,
+      "endDate": null,
+      "url": null,
+      "githubUrl": null,
+      "image": null,
+      "highlights": [
+        "Personal projects for skill development",
+        "Explored new technologies and frameworks",
+        "Applied programming knowledge in practical projects"
+      ]
+    }
+  ]
+}
