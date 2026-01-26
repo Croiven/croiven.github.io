@@ -19,7 +19,7 @@ export const CoreDetails = () => {
     const data = getCoreDetails();
 
     return (
-        <Box sx={{ padding: 2 }}>
+        <Box sx={{ padding: { xs: 1, sm: 2 } }}>
             <Paper sx={{ padding: 3 }}>
                 <Grid container spacing={2}>
                     <Grid size={{ xs: 12, md: 3 }}>

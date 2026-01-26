@@ -25,13 +25,15 @@
       "location": "Finland",
       "startDate": "5/2021",
       "endDate": null,
-      "description": "I work as a full-stack developer, and my main responsibility is UI and backend development in in-house project. I have earlier worked in customer projects where we created and customized Shopify stores including theme and integration development.",
+      "description": "Full-stack developer with experience across diverse projects. Currently developing an analytics platform using React, TypeScript, and Python. Previously built a full-scale web application with Angular and .NET. Earlier focused on e-commerce, creating custom Shopify themes and integrations for customer projects.",
       "achievements": [
-        "Full-stack development with focus on UI and backend",
-        "Created and customized Shopify stores for customers",
-        "Developed Shopify themes and integrations"
+        "Developing analytics platform with React, TypeScript, and Python backend",
+        "Built full-scale web application using Angular and .NET, my focus on the frontend",
+        "Created custom Shopify themes with Liquid templating",
+        "Developed Shopify integrations connecting stores with external systems",
+        "Worked across multiple technology stacks and project types"
       ],
-      "technologies": ["JavaScript", "TypeScript", "React", "Angular", "Python", "Ruby", "HTML", "CSS", "Shopify", "Liquid"]
+      "technologies": ["TypeScript", "React", "Python", "Angular", ".NET", "JavaScript", "Shopify", "Liquid", "HTML", "CSS"]
     },
     {
       "id": "2",
@@ -132,34 +134,66 @@
   "projects": [
     {
       "id": "1",
-      "name": "Discord Bots",
-      "description": "Created different kinds of Discord bots to help gaming communities with various functionalities and automation.",
+      "name": "CroiBot",
+      "description": "Discord bot designed to help gaming communities with various functionalities and automation.",
       "technologies": ["JavaScript", "Node.js", "Discord.js"],
       "startDate": null,
       "endDate": null,
       "url": null,
-      "githubUrl": null,
+      "githubUrl": "https://github.com/Croiven/CroiBot",
       "image": null,
       "highlights": [
-        "Developed bots for gaming communities",
+        "Developed bot for gaming communities",
         "Automated community management tasks",
         "Enhanced user experience in Discord servers"
       ]
     },
     {
       "id": "2",
-      "name": "Small Coding Projects",
-      "description": "Various small coding projects created for fun and learning purposes during free time.",
-      "technologies": [],
+      "name": "MaplestoryWebApp",
+      "description": "Web application for displaying Maplestory character data, exploring different visualization approaches. Built using vibe coding technique with Cursor.",
+      "technologies": ["TypeScript", "React", "Vite"],
       "startDate": null,
       "endDate": null,
       "url": null,
-      "githubUrl": null,
+      "githubUrl": "https://github.com/Croiven/MaplestoryWebApp",
       "image": null,
       "highlights": [
-        "Personal projects for skill development",
-        "Explored new technologies and frameworks",
-        "Applied programming knowledge in practical projects"
+        "Displays Maplestory character data",
+        "Experimented with different visualization methods",
+        "Built with modern AI-assisted development workflow"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "CV Portfolio Website",
+      "description": "The page what you are currently viewing. Personal portfolio website showcasing CV and professional experience, built with React and Vite.",
+      "technologies": ["TypeScript", "React", "Vite"],
+      "startDate": null,
+      "endDate": null,
+      "url": null,
+      "githubUrl": "https://github.com/Croiven/croiven.github.io",
+      "image": null,
+      "highlights": [
+        "Responsive and modern design",
+        "PDF export functionality",
+        "Hosted on GitHub Pages"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "CivRandomizer",
+      "description": "Civilization 6 civilization randomizer tool to help players randomly select civilizations for games.",
+      "technologies": ["Java"],
+      "startDate": null,
+      "endDate": null,
+      "url": null,
+      "githubUrl": "https://github.com/Croiven/CivRandomizer",
+      "image": null,
+      "highlights": [
+        "Random civilization selection for Civ 6",
+        "Helps players discover new playstyles",
+        "Simple and easy to use"
       ]
     }
   ]

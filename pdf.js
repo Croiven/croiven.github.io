@@ -6,8 +6,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// eslint-disable-next-line no-undef
-const url = 'http://localhost:5173';
+// Navigate to the printable CV route
+const url = 'http://localhost:5173/#/printable-cv';
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -27,7 +27,17 @@ const url = 'http://localhost:5173';
     }
   }
 
-  await page.pdf({ path: pdfPath, format: 'A4', scale: 0.45 });
+  await page.pdf({ 
+    path: pdfPath, 
+    format: 'A4',
+    printBackground: true,
+    margin: {
+      top: '0',
+      right: '0',
+      bottom: '0',
+      left: '0'
+    }
+  });
 
   await browser.close();
   console.log(`PDF saved to ${pdfPath}`);
