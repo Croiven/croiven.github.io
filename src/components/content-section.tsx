@@ -5,6 +5,7 @@ import { EducationSection } from "./sections/education";
 import { VolunteeringSection } from "./sections/volunteering";
 import { SkillsSection } from "./sections/skills";
 import { ProjectsSection } from "./sections/projects";
+import { CertificationsSection } from "./sections/certifications";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -31,6 +32,7 @@ function TabPanel(props: TabPanelProps) {
 const tabLabels = [
   "Work Experience",
   "Education",
+  "Certifications",
   "Volunteering",
   "Skills",
   "Side Projects"
@@ -101,12 +103,15 @@ export const ContentSection = () => {
             <EducationSection />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <VolunteeringSection />
+            <CertificationsSection />
           </TabPanel>
           <TabPanel value={value} index={3}>
-            <SkillsSection />
+            <VolunteeringSection />
           </TabPanel>
           <TabPanel value={value} index={4}>
+            <SkillsSection />
+          </TabPanel>
+          <TabPanel value={value} index={5}>
             <ProjectsSection />
           </TabPanel>
         </Box>

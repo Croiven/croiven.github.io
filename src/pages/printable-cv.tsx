@@ -8,9 +8,22 @@ import { getEducation } from '../utils/get-education';
 import { getVolunteering } from '../utils/get-volunteering';
 import { getSkills } from '../utils/get-skills';
 import { getProjects } from '../utils/get-projects';
+import { getCertifications } from '../utils/get-certifications';
 
 const formatDate = (dateStr: string | null | undefined): string => {
   if (!dateStr) return 'Present';
+  return dateStr;
+};
+
+const formatCertDate = (dateStr: string | null | undefined): string => {
+  if (!dateStr) return '';
+  // Handle formats like "2024-12-01" or "12/2024" or "2024-12"
+  if (dateStr.includes('-')) {
+    const parts = dateStr.split('-');
+    if (parts.length >= 2) {
+      return `${parts[1]}/${parts[0]}`; // MM/YYYY
+    }
+  }
   return dateStr;
 };
 
@@ -18,6 +31,7 @@ export function PrintableCV() {
   const coreDetails = getCoreDetails();
   const workExperience = getWorkExperience();
   const education = getEducation();
+  const certifications = getCertifications();
   const volunteering = getVolunteering();
   const skills = getSkills();
   const projects = getProjects();
@@ -304,6 +318,50 @@ export function PrintableCV() {
         ))}
       </Box>
 
+      {/* Certifications */}
+      {certifications.length > 0 && (
+        <Box component="section" sx={{ mb: '18px', pageBreakInside: 'avoid' }}>
+          <Typography
+            variant="h2"
+            sx={{
+              fontSize: '12pt',
+              fontWeight: 700,
+              color: '#1a365d',
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px',
+              mb: '10px',
+              pb: '4px',
+              borderBottom: '1px solid #cbd5e0',
+            }}
+          >
+            Certifications
+          </Typography>
+          {certifications.map((cert) => (
+            <Box key={cert.id} sx={{ mb: '12px', pageBreakInside: 'avoid' }}>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: '4px' }}>
+                <Box>
+                  <Typography sx={{ fontWeight: 600, color: '#2d3748', fontSize: '10.5pt' }}>
+                    {cert.name}
+                  </Typography>
+                  <Typography sx={{ color: '#2c5282', fontWeight: 500, fontSize: '10pt' }}>
+                    {cert.issuer}
+                  </Typography>
+                </Box>
+                <Typography sx={{ color: '#718096', fontSize: '9pt', whiteSpace: 'nowrap' }}>
+                  {formatCertDate(cert.issueDate)}
+                  {cert.expirationDate && ` – ${formatCertDate(cert.expirationDate)}`}
+                </Typography>
+              </Box>
+              {cert.credentialId && (
+                <Typography sx={{ color: '#718096', fontSize: '9pt' }}>
+                  Credential ID: {cert.credentialId}
+                </Typography>
+              )}
+            </Box>
+          ))}
+        </Box>
+      )}
+
       {/* Projects & Volunteering in two columns */}
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', pageBreakInside: 'avoid' }}>
         {/* Projects */}
@@ -321,7 +379,7 @@ export function PrintableCV() {
               borderBottom: '1px solid #cbd5e0',
             }}
           >
-            Projects
+            Side Projects
           </Typography>
           {projects.map((project) => (
             <Box key={project.id} sx={{ mb: '10px', pageBreakInside: 'avoid' }}>

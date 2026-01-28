@@ -181,5 +181,25 @@
         "Built with modern AI-assisted development workflow"
       ]
     }
+  ],
+  "certifications": [
+    {
+      "id": "1",
+      "name": "Liquid Storefronts for Theme Developers",
+      "issuer": "Shopify",
+      "issueDate": "2024-12"
+    },
+    {
+      "id": "2",
+      "name": "Shopify Development Fundamentals: Verified Skill Badge",
+      "issuer": "Shopify",
+      "issueDate": "2024-12"
+    },
+    {
+      "id": "3",
+      "name": "Solution Planning Fundamentals: Verified Skill Badge",
+      "issuer": "Shopify",
+      "issueDate": "2024-12"
+    }
   ]
 }

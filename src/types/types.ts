@@ -74,3 +74,14 @@ export interface Project {
   highlights?: string[];
 }
 
+// Certifications
+export interface Certification {
+  id: string;
+  name: string;
+  issuer: string;
+  issueDate: string;
+  expirationDate?: string | null;
+  credentialId?: string | null;
+  credentialUrl?: string | null;
+}
+
