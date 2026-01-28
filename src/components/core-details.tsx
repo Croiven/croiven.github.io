@@ -1,10 +1,12 @@
-import { Box, Paper, Typography, Link, Stack, Grid, IconButton } from "@mui/material"
+import { Box, Paper, Typography, Link, Stack, Grid, IconButton, Button } from "@mui/material"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
+import DownloadIcon from '@mui/icons-material/Download';
 import { getCoreDetails } from "../utils/get-core-details"
+import { downloadPdf } from "../utils/download-pdf"
 
 const getSocialIcon = (platform: string) => {
   const platformLower = platform.toLowerCase();
@@ -61,8 +63,6 @@ export const CoreDetails = () => {
                         <Typography variant="h6" color="text.secondary" gutterBottom>
                             {data.title}
                         </Typography>
-                        
-
                     </Grid>
                     <Grid size={{ xs: 12, md: 3 }}>
                         {data.bio && (
@@ -107,6 +107,17 @@ export const CoreDetails = () => {
                                 </IconButton>
                             ))}
                         </Stack>
+                        <Button
+                            variant="contained"
+                            startIcon={<DownloadIcon />}
+                            onClick={downloadPdf}
+                            sx={{
+                                marginTop: 2,
+                                textTransform: 'none',
+                            }}
+                        >
+                            Download CV
+                        </Button>
                     </Grid>
                 </Grid>
             </Paper>

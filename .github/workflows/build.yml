@@ -35,6 +35,17 @@ jobs:
       
       - name: Build
         run: npm run build
+
+      - name: Start development server
+        run: npm run dev &
+        env:
+          NODE_ENV: development
+
+      - name: Wait for server to be ready
+        run: sleep 10
+
+      - name: Generate PDF
+        run: npm run pdf
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

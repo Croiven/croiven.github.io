@@ -33,7 +33,7 @@ const tabLabels = [
   "Education",
   "Volunteering",
   "Skills",
-  "Projects"
+  "Side Projects"
 ];
 
 export const ContentSection = () => {

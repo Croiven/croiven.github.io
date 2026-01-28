@@ -23,21 +23,30 @@ export function PrintableCV() {
   const projects = getProjects();
 
   return (
-    <Box
-      sx={{
-        maxWidth: '210mm',
-        margin: '0 auto',
-        padding: '15mm 20mm',
-        backgroundColor: '#fff',
-        color: '#333',
-        fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
-        fontSize: '10pt',
-        lineHeight: 1.4,
-        '@media print': {
-          padding: '10mm 15mm',
-        },
-      }}
-    >
+    <>
+      <style>
+        {`
+          @page {
+            margin: 10mm 15mm;
+          }
+        `}
+      </style>
+      <Box
+        sx={{
+          maxWidth: '210mm',
+          margin: '0 auto',
+          padding: '15mm 20mm',
+          backgroundColor: '#fff',
+          color: '#333',
+          fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
+          fontSize: '10pt',
+          lineHeight: 1.4,
+          '@media print': {
+            padding: '0',
+            maxWidth: '100%',
+          },
+        }}
+      >
       {/* Header */}
       <Box
         sx={{
@@ -125,13 +134,14 @@ export function PrintableCV() {
           borderLeft: '3px solid #2c5282',
           fontStyle: 'italic',
           color: '#4a5568',
+          pageBreakInside: 'avoid',
         }}
       >
         {coreDetails.bio}
       </Box>
 
       {/* Skills */}
-      <Box component="section" sx={{ mb: '18px' }}>
+      <Box component="section" sx={{ mb: '18px', pageBreakInside: 'avoid' }}>
         <Typography
           variant="h2"
           sx={{
@@ -175,7 +185,7 @@ export function PrintableCV() {
       </Box>
 
       {/* Work Experience */}
-      <Box component="section" sx={{ mb: '18px' }}>
+      <Box component="section" sx={{ mb: '18px', pageBreakInside: 'avoid' }}>
         <Typography
           variant="h2"
           sx={{
@@ -256,7 +266,7 @@ export function PrintableCV() {
       </Box>
 
       {/* Education */}
-      <Box component="section" sx={{ mb: '18px' }}>
+      <Box component="section" sx={{ mb: '18px', pageBreakInside: 'avoid' }}>
         <Typography
           variant="h2"
           sx={{
@@ -295,9 +305,9 @@ export function PrintableCV() {
       </Box>
 
       {/* Projects & Volunteering in two columns */}
-      <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+      <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', pageBreakInside: 'avoid' }}>
         {/* Projects */}
-        <Box component="section">
+        <Box component="section" sx={{ pageBreakInside: 'avoid' }}>
           <Typography
             variant="h2"
             sx={{
@@ -334,7 +344,7 @@ export function PrintableCV() {
         </Box>
 
         {/* Volunteering */}
-        <Box component="section">
+        <Box component="section" sx={{ pageBreakInside: 'avoid' }}>
           <Typography
             variant="h2"
             sx={{
@@ -368,6 +378,7 @@ export function PrintableCV() {
         </Box>
       </Box>
     </Box>
+    </>
   );
 }
 
