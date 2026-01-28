@@ -37,15 +37,25 @@ jobs:
         run: npm run build
 
       - name: Start development server
-        run: npm run dev &
+        run: |
+          npm run dev &
+          echo $! > server.pid
         env:
           NODE_ENV: development
 
       - name: Wait for server to be ready
-        run: sleep 10
+        run: npx wait-on http://localhost:5173 -t 60000 || sleep 15
 
       - name: Generate PDF
         run: npm run pdf
+
+      - name: Stop development server
+        if: always()
+        run: |
+          if [ -f server.pid ]; then
+            kill $(cat server.pid) || true
+            rm server.pid
+          fi
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
