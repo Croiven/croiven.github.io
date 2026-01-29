@@ -311,9 +311,14 @@ export function PrintableCV() {
                 {formatDate(edu.startDate)} – {formatDate(edu.endDate)}
               </Typography>
             </Box>
-            <Typography sx={{ color: '#718096', fontSize: '9pt' }}>
+            <Typography sx={{ color: '#718096', fontSize: '9pt', mb: '4px' }}>
               {edu.location}
             </Typography>
+            {edu.description && (
+              <Typography sx={{ color: '#4a5568', fontSize: '10pt' }}>
+                {edu.description}
+              </Typography>
+            )}
           </Box>
         ))}
       </Box>

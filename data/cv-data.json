@@ -28,12 +28,12 @@
       "description": "Worked across diverse projects, focusing on web applications and e-commerce solutions using modern frontend and backend technologies.",
       "achievements": [
         "Developing analytics platform with React, TypeScript, and Python backend",
-        "Built full-scale web application using Angular and .NET, my focus on the frontend",
+        "Built full-scale web application using Angular and .NET, focusing on the frontend",
         "Created custom Shopify themes with Liquid templating",
         "Developed Shopify integrations connecting stores with external systems",
         "Worked across multiple technology stacks and project types"
       ],
-      "technologies": ["TypeScript", "React", "Python", "PostgreSQL", "Angular", ".NET", "JavaScript", "Shopify", "Liquid", "HTML", "CSS"]
+      "technologies": ["TypeScript", "React", "Python", "PostgreSQL", "Google Cloud", "Angular", ".NET", "JavaScript", "Shopify", "Liquid", "HTML", "CSS"]
     },
     {
       "id": "2",
@@ -120,7 +120,7 @@
   "skills": [
     {
       "category": "Software Development",
-      "skills": ["JavaScript", "TypeScript", "React", "Angular", "Python", "Node.js", "Ruby", "PostgreSQL", "HTML", "CSS", "Shopify", "Liquid", "Cursor", "Git"]
+      "skills": ["JavaScript", "TypeScript", "React", "Angular", "Python", "Node.js", "Ruby", "PostgreSQL", "Google Cloud", "HTML", "CSS", "Shopify", "Liquid", "Cursor", "Git"]
     },
     {
       "category": "Other Strengths",
